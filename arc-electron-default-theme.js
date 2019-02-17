@@ -1,27 +1,11 @@
-<!--
-@license
-Copyright 2018 The Advanced REST client authors <arc@mulesoft.com>
-Licensed under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License. You may obtain a copy of
-the License at
-http://www.apache.org/licenses/LICENSE-2.0
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
-License for the specific language governing permissions and limitations under
-the License.
--->
-<link rel="import" href="../polymer/lib/elements/custom-style.html">
-<link rel="import" href="../shadycss/apply-shim.html">
-<link rel="import" href="../polymer/lib/elements/custom-style.html">
-<link rel="import" href="../paper-styles/typography.html">
-<link rel="import" href="../paper-styles/default-theme.html">
-<!--
-Advanced REST Client deskto app main stylesheet.
-It is a Polymer's custom style element. It will propagate variables and mixins
-to all elements.
--->
-<custom-style>
+import '../../@polymer/polymer/lib/elements/custom-style.js';
+import '../../@webcomponents/shadycss/entrypoints/apply-shim.js';
+import '../../@polymer/polymer/lib/elements/custom-style.js';
+import '../../@polymer/paper-styles/typography.js';
+import '../../@polymer/paper-styles/default-theme.js';
+const $_documentContainer = document.createElement('template');
+
+$_documentContainer.innerHTML = `<custom-style>
   <style is="custom-style">
     --primary-color: #00A2DF;
     --primary-text-color: rgba(0, 0, 0, 0.87);
@@ -477,4 +461,31 @@ to all elements.
     --api-console-main-content-margin-top: 12px;
   }
   </style>
-</custom-style>
+</custom-style>`;
+
+document.head.appendChild($_documentContainer.content);
+
+/**
+@license
+Copyright 2018 The Advanced REST client authors <arc@mulesoft.com>
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License. You may obtain a copy of
+the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations under
+the License.
+*/
+/*
+Advanced REST Client deskto app main stylesheet.
+It is a Polymer's custom style element. It will propagate variables and mixins
+to all elements.
+*/
+/*
+  FIXME(polymer-modulizer): the above comments were extracted
+  from HTML and may be out of place here. Review them and
+  then delete this comment!
+*/
+;
