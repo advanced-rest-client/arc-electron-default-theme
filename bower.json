@@ -1,9 +1,9 @@
 {
-  "name": "arc-electron-default-theme",
-  "description": "A default theme definition for Advanced REST Client desktop app",
-  "version": "2.0.0-preview",
+  "name": "api-console-default-theme",
+  "description": "A default theme definition for API console",
+  "version": "2.0.1",
   "license": "Apache-2.0",
-  "main": "arc-electron-default-theme.html",
+  "main": "api-console-default-theme.html",
   "keywords": [
     "api-components"
   ],
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:advanced-rest-client/arc-electron-default-theme.git"
+    "url": "git@github.com:advanced-rest-client/api-console-default-theme.git"
   },
   "ignore": [
     "**/.*",
